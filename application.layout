@@ -273,13 +273,14 @@
                          <li id="leasing_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Leasing <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing">Leasing</a></li>
-                                <li><a href="/find_us">Find Us</a></li>
+                                <li><a href="/photos">Photos</a></li>
                             </ul> 
                          </li>
+                          <li><a href="/find_us">Find Us</a></li>
                          <li id="contact_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">contact us <span class="caret"></span></a>
                              <ul class="dropdown-menu">
                                 <li><a href="/contact_us">Contact Us</a></li>
-                                
+                               
                                 <li><a href="/about_us">About Us</a></li>
                                 
                                <li><a href="/jobs">Jobs</a></li>
