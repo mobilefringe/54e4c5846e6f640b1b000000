@@ -393,7 +393,7 @@ background-color: #FFFFFF ;
                     var startingPanY = -100;
                     if(isMobile) {
                             startingMapTransform = 'scale(1.5)';
-                            startingPanX = -70;
+                            startingPanX = -40;
                             startingPanY = 10;
                     }
                     $('#loading').hide();
