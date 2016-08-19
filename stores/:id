@@ -495,6 +495,7 @@ background-color: #FFFFFF ;
     function load_map(reg, store_details, h, w){
         this_region = {};
         this_region = store_details.svgmap_region;
+        console.log(store_details)
         map = $('#mapsvg_store_detail').mapSvg({
             source: getSVGMapURL(),
             colors: {stroke: '#aaa', hover: 0, selected: '#ce3135'},
