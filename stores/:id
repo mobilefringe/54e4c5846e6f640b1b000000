@@ -260,7 +260,7 @@ background-color: #FFFFFF ;
                 }
             });
             
-            load_map(regions, store_details);
+            
             
             
             
