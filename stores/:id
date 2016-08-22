@@ -498,7 +498,19 @@ background-color: #FFFFFF ;
         console.log(store_details)
         map = $('#mapsvg_store_detail').mapSvg({
             source: 'http://cdn.mallmaverick.com/system/properties/svgmaps/000/000/068/original/VV_map_(1).svg?1453152385',
-            
+            colors: {stroke: '#aaa', hover: 0, selected: '#ce3135'},
+            disableAll: true,
+            height:h,
+            width:w,
+            regions: reg,
+            tooltipsMode:'custom',
+            loadingText: "loading...",
+            zoom: true,
+            zoomButtons: {'show': true,'location': 'right' },
+            pan:true,
+            cursor:'pointer',
+            responsive:true,
+            zoomLimit: [0,10]
         });
         map.setViewBox(store_details.svgmap_region);
         map.selectRegion(store_details.svgmap_region);
