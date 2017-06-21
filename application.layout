@@ -52,53 +52,49 @@
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
-
-
-
-
-<script>
-    $(document).ready(function() {
-        $.reject({  
-            reject: { all: false, msie: 9 },  
-            header: 'Thanks for visiting The Village at Vaughan Mills', // Header Text  
-            paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
-            paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
-            closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
-            closeCookie: true,
-            browserInfo: { // Settings for which browsers to display  
-                chrome: {  
-                    // Text below the icon  
-                    text: 'Google Chrome',  
-                    // URL For icon/text link  
-                    url: '//www.google.com/chrome/',  
-                    // (Optional) Use "allow" to customized when to show this option  
-                    // Example: to show chrome only for IE users  
-                    // allow: { all: false, msie: true }  
-                },  
-                firefox: {  
-                    text: 'Mozilla Firefox',  
-                    url: '//www.mozilla.com/firefox/'  
-                },  
-                safari: {  
-                    text: 'Safari',  
-                    url: '//www.apple.com/safari/download/'  
-                },  
-                opera: {  
-                    text: 'Opera',  
-                    url: '//www.opera.com/download/'  
-                },  
-                msie: {  
-                    text: 'Internet Explorer',  
-                    url: '//www.microsoft.com/windows/Internet-explorer/'  
-                }  
-            },// Message below close window link  
-            imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
-        });      
-    });
-    setEndPoint('//thevillageatvaughanmills.mallmaverick.com/api/v3/villageatvaughanmills/all.json');
-    // sessionStorage.setItem('primary_locale', 'en-CA');
-    // sessionStorage.setItem('secondary_locale', 'fr-CA');
-</script>
+    <script>
+        $(document).ready(function() {
+            $.reject({  
+                reject: { all: false, msie: 9 },  
+                header: 'Thanks for visiting The Village at Vaughan Mills', // Header Text  
+                paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
+                paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
+                closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
+                closeCookie: true,
+                browserInfo: { // Settings for which browsers to display  
+                    chrome: {  
+                        // Text below the icon  
+                        text: 'Google Chrome',  
+                        // URL For icon/text link  
+                        url: '//www.google.com/chrome/',  
+                        // (Optional) Use "allow" to customized when to show this option  
+                        // Example: to show chrome only for IE users  
+                        // allow: { all: false, msie: true }  
+                    },  
+                    firefox: {  
+                        text: 'Mozilla Firefox',  
+                        url: '//www.mozilla.com/firefox/'  
+                    },  
+                    safari: {  
+                        text: 'Safari',  
+                        url: '//www.apple.com/safari/download/'  
+                    },  
+                    opera: {  
+                        text: 'Opera',  
+                        url: '//www.opera.com/download/'  
+                    },  
+                    msie: {  
+                        text: 'Internet Explorer',  
+                        url: '//www.microsoft.com/windows/Internet-explorer/'  
+                    }  
+                },// Message below close window link  
+                imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
+            });      
+        });
+        setEndPoint('//thevillageatvaughanmills.mallmaverick.com/api/v3/villageatvaughanmills/all.json');
+        // sessionStorage.setItem('primary_locale', 'en-CA');
+        // sessionStorage.setItem('secondary_locale', 'fr-CA');
+    </script>
 <style>
     /*custom styles*/
     a .directory_content:hover{
