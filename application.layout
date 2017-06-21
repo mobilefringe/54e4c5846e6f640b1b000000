@@ -65,7 +65,7 @@
                         // Text below the icon  
                         text: 'Google Chrome',  
                         // URL For icon/text link  
-                        url: '//www.google.com/chrome/',  
+                        url: 'https://www.google.com/chrome/',  
                         // (Optional) Use "allow" to customized when to show this option  
                         // Example: to show chrome only for IE users  
                         // allow: { all: false, msie: true }  
