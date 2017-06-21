@@ -92,9 +92,9 @@
             imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
         });      
     });
-    setEndPoint('//thevillageatvaughanmills.mallmaverick.com/api/v2/villageatvaughanmills/all.json');
-    sessionStorage.setItem('primary_locale', 'en-CA');
-    sessionStorage.setItem('secondary_locale', 'fr-CA');
+    setEndPoint('//thevillageatvaughanmills.mallmaverick.com/api/v3/villageatvaughanmills/all.json');
+    // sessionStorage.setItem('primary_locale', 'en-CA');
+    // sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
 <style>
     /*custom styles*/
