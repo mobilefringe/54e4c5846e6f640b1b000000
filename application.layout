@@ -42,6 +42,8 @@
 <!--jReject is used to warn users certain browsers aren't compatible with this site-->
 <script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>
 <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     
     <!--MallMaverick v=0.3-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
