@@ -62,13 +62,13 @@
             all_jobs = getJobsList(); 
             all_jobs = all_jobs.reverse();
             jobs_array = []
-             $.each( all_jobs , function( key, val ){
-                 today = new Date();
-                 webDate = new Date(val.show_on_web_date);
-                 if (today >= webDate) {
-                     jobs_array.push(val)
-                 } 
-             });
+            $.each( all_jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    jobs_array.push(val)
+                } 
+            });
             all_jobs = jobs_array;
             if (all_jobs.length > 0 ) {
                 renderPageData("#promo_list_container","#promo_list_template", all_jobs, "jobs");    
