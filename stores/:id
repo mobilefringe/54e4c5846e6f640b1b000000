@@ -190,12 +190,12 @@ background-color: #FFFFFF ;
     </div>
 </div>
 
-<script type="text/javascript" src="//cdn.mallmaverick.com/javascripts/gallery/slimbox/slimbox2.js"></script>
-<link rel="stylesheet" href="//cdn.mallmaverick.com/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
-<script type="text/javascript" src="//cdn.mallmaverick.com/javascripts/mapsvg/jquery.js"></script>
-<script type="text/javascript" src="//cdn.mallmaverick.com/javascripts/mapsvg/raphael.js"></script>
-<script type="text/javascript" src="//cdn.mallmaverick.com/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//cdn.mallmaverick.com/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
+<link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
 <script>
     $(document).ready(function() {
@@ -497,7 +497,7 @@ background-color: #FFFFFF ;
         this_region = store_details.svgmap_region;
         console.log(store_details)
         map = $('#mapsvg_store_detail').mapSvg({
-            source: '//cdn.mallmaverick.com/system/properties/svgmaps/000/000/068/original/VV_map_(1).svg?1453152385',
+            source: '//mallmaverick.cdn.speedyrails.net/system/properties/svgmaps/000/000/068/original/VV_map_(1).svg?1453152385',
             colors: {stroke: '#aaa', hover: 0, selected: '#ce3135'},
             disableAll: true,
             height:h,
