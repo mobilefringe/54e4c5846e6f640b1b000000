@@ -58,7 +58,6 @@
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
-            
             all_jobs = getJobsList(); 
             all_jobs = all_jobs.reverse();
             jobs_array = []
@@ -78,10 +77,8 @@
             
             $("#loading_screen").hide();
             $("#main_content").show();
-            
         }
         
-    
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
@@ -93,7 +90,6 @@
                 collection = item_list;
             }
             $.each( collection , function( key, val ) {
-                
                 if (val.jobable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.jobable_id);
                     val.store_name = store_details.name
@@ -102,60 +98,11 @@
                 
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
-        
-        function get_month (id){
-            switch(id) {
-                case 0:
-                    month = "Jan"
-                    break;
-                case 1:
-                    month = "Feb"
-                    break;
-                case 2:
-                    month = "Mar"
-                    break;
-                case 3:
-                    month = "Apr"
-                    break;
-                case 4:
-                    month = "May"
-                    break;
-                case 5:
-                    month = "June"
-                    break;
-                case 6:
-                    month = "July"
-                    break;
-                case 7:
-                    month = "Aug"
-                    break;
-                case 8:
-                    month = "Sep"
-                    break;
-                case 9:
-                    month = "Oct"
-                    break;
-                case 10:
-                    month = "Nov"
-                    break;
-                case 11:
-                    month = "Dec"
-                    break;
-                    
-            }
-            return month;
-        }
-  
-        loadMallData(renderAll);  
-
-    
-  
+ 
+        loadMallData(renderAll);
     });
-    
 </script>
