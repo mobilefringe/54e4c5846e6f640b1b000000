@@ -35,16 +35,17 @@
 <link rel="shortcut icon" href="//kodekloud.s3.amazonaws.com/sites/54e4c5846e6f640b1b000000/0e15fdc1ee4c466a3998990b50632b23/favicon-16.png" />
 
 <!-- jQuery Version 1.11.0 -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 <!--jReject is used to warn users certain browsers aren't compatible with this site-->
 <script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>
 <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
-<!--MallMaverick v=0.3-->
-<script src="//mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
-<script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+    
+    <!--MallMaverick v=0.3-->
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
+    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
 <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
 
