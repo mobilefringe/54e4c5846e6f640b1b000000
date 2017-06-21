@@ -299,44 +299,47 @@
 
 <footer>
     <section id="footer_teasers_wrapper">
-        
         <div class="container">
             <div class="footer_div">
-            <div class="footer_teaser" style="margin-right:195px">
-                <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>
-                <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
-                <form action="//mobilefringe.createsend.com/t/d/s/tktdtj/" method="post" id="subForm">
-                    <label for="fieldEmail" style="display:none"> subscribe email </label>
-                    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tktdtj-tktdtj" type="email" required placeholder="enter email" /> 
-                    <div class="checkbox footer_text" style="width:300px">
-                        <span>
-                        <label for="agree_terms" style="display:none">Agree Terms</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from The Village at Vaughan Mills
-                        </span>
-                    </div>
-                    <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
-                    <br>
-                </form>
-            </div>
+                <div class="footer_teaser" style="margin-right:195px">
+                    <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>
+                    <p class="footer_text" style="width:300px;font-size:17px">
+                        Join our list and stay connected to be the first to hear about special sales & exclusive events!
+                    </p>
+                    <form action="//mobilefringe.createsend.com/t/d/s/tktdtj/" method="post" id="subForm">
+                        <label for="fieldEmail" style="display:none"> subscribe email </label>
+                        <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tktdtj-tktdtj" type="email" required placeholder="enter email" /> 
+                        <div class="checkbox footer_text" style="width:300px">
+                            <span>
+                            <label for="agree_terms" style="display:none">Agree Terms</label>
+                            <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from The Village at Vaughan Mills
+                            </span>
+                        </div>
+                        <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
+                        <br>
+                    </form>
+                </div>
                 <div class="footer_teaser">
                     <div id="footer_container">
                         <script id="footer_template" type="x-tmpl-mustache/text">
-                        {% raw %}
-                        <h3 class="footer_text" style="font-size:17px;width:300px;">{{name}}</h3>
-                        <p class="footer_text" style="width:300px;font-size:17px">
-                        {{address1}}</br>
-                        {{city}}, {{province_state}}
-                    
-                        </p>
-                        <p><i class="fa fa-phone"></i>        {{contact_phone}}</p>
-                        <p><i class="fa fa-envelope"></i> <a href="mailto:{{contact_email}}">        {{contact_email}}</a></p>
-                        </br>
-                        {% endraw %}
+                            {% raw %}
+                            <h3 class="footer_text" style="font-size:17px;width:300px;">{{name}}</h3>
+                            <p class="footer_text" style="width:300px;font-size:17px">
+                                {{address1}}</br>
+                                {{city}}, {{province_state}}
+                            </p>
+                            <p><i class="fa fa-phone"></i>        {{contact_phone}}</p>
+                            <p><i class="fa fa-envelope"></i> <a href="mailto:{{contact_email}}">        {{contact_email}}</a></p>
+                            </br>
+                            {% endraw %}
                         </script>
                     </div>
                     <div style="height:30px;position:relative">
                         <label for="search_input" style="display:none">Search</label>
-                        <input style="color:black;width:265px" type="text" id="search_input" class="search_input" placeholder="Search"><button class="search_button"><img alt="Search" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/icon_search.png"/></button>
+                        <input style="color:black;width:265px" type="text" id="search_input" class="search_input" placeholder="Search">
+                        <button class="search_button">
+                            <img alt="Search" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/icon_search.png"/>
+                        </button>
                     </div>
                     <div class="search-results" id="search_results" style="display:none">
                         <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
@@ -371,20 +374,19 @@
                         </div>
                         </script>{% endraw %}
                     
-                        <ul class="list-group" >
-                            
-                            <li>
-                            <a  class="close-search list-group-item" style="color:black;font-weight:bold">
-                                <small>
-                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
-                                </small>
-                            </a>
-                            </li>
-                            <li>
-                            <div id="search_results_items" class="search-results-items" style="">
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </div>
-                            </li>
+                            <ul class="list-group" >
+                                <li>
+                                    <a  class="close-search list-group-item" style="color:black;font-weight:bold">
+                                        <small>
+                                            <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
+                                        </small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div id="search_results_items" class="search-results-items" style="">
+                                        <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                                    </div>
+                                </li>
                                 <li>
                                     <a class="close-search list-group-item" style="">
                                         <small>
