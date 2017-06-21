@@ -26,8 +26,7 @@
          ga('create', 'UA-50587834-16', 'auto');
          ga('send', 'pageview');
     </script>
-
-
+    
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
     <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider.css" rel="stylesheet">
