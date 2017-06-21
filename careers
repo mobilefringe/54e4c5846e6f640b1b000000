@@ -68,7 +68,6 @@
             
             $("#loading_screen").hide();
             $("#main_content").show();
-            
         }
         
     
