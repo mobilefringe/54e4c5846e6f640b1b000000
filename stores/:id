@@ -360,10 +360,12 @@ background-color: #FFFFFF ;
                             break;
                     }
                     
-                    
-                    if ((val.store_front_url).indexOf('missing.png') > -1){ val.alt_store_front_url = "//kodekloud.s3.amazonaws.com/sites/54e4c5846e6f640b1b000000/6375a90d520e4cfa50d1213136196677/village_default.jpg" } else { val.alt_store_front_url = getImageURL(val.store_front_url); }
-                    
-                    
+                    if ((val.store_front_url).indexOf('missing.png') > -1){ 
+                        val.alt_store_front_url = "//kodekloud.s3.amazonaws.com/sites/54e4c5846e6f640b1b000000/6375a90d520e4cfa50d1213136196677/village_default.jpg" 
+                    } else { 
+                        val.alt_store_front_url = getImageURL(val.store_front_url); 
+                    }
+                
                     val.hours = (getHoursForIds(val.store_hours))
                     var rendered = Mustache.render(template_html,val);
                     item_rendered.push(rendered);
@@ -393,35 +395,35 @@ background-color: #FFFFFF ;
                         case 6:
                             val.day = "Saturday"
                             break;
-                        
                     }
                     if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                        var open_time = new Date (val.open_time)
-                        var close_time = new Date (val.close_time)
-                        val.open_time = convert_hour(open_time);
-                        val.close_time = convert_hour(close_time);    
-                        val.h = val.day+": "+val.open_time+ " - " + val.close_time;
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                     } else {
-                        val.h = val.day+": Closed"
+                        val.h = val.day + ": Closed"
                     }
+                    
                     var rendered = Mustache.render(template_html,val);
                     item_rendered.push(rendered);
-                    
                 });
             }else {
                 $.each( collection , function( key, val ) {
-                    // if (type == "store_details"){
-                    //     val.alt_store_front_url = getImageURL(val.store_front_url);    
-                    // }
                     if (type == "promotions"){
-                        start = new Date (val.start_date + "T05:00:00Z");
-                    end = new Date (val.end_date + "T05:00:00Z");
-                        // start.setDate(start.getDate()+1);
-                        // end.setDate(end.getDate()+1);
-                        val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                        var start = moment(val.start_date).tz(getPropertyTimeZone());
+                        var end = moment(val.end_date).tz(getPropertyTimeZone());
+                        
+                        if (start.format("DMY") == end.format("DMY")){
+                        	val.dates = start.format("MMM D");
+                        }
+                        else {
+                        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+                        }
+                        
                         if (val.description.length > 110) {
                            val.description =  val.description.substring(0,100)+'...';
                         } 
+                        
                         if ((val.promo_image_url).indexOf('missing.png') > -1){
                             var pathArray = window.location.pathname.split( '/' );
                             var slug = pathArray[pathArray.length-1];
@@ -430,10 +432,9 @@ background-color: #FFFFFF ;
                         } else {
                            val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
                         }
+                        
                         $("#promo_header").show();   
                         $("#mobile_promo_header").show();  
-                        
-                        
                     }
                     if (type == "jobs") {
                         var pathArray = window.location.pathname.split( '/' );
@@ -445,16 +446,13 @@ background-color: #FFFFFF ;
                     }
                     var rendered = Mustache.render(template_html,val);
                     item_rendered.push(rendered);
-                    
-                    
                 });
             }
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
             if (type == "store_details"){
                 if (collection.website != "" && collection.website != undefined){
-                        $("#store_website_link").show();
+                    $("#store_website_link").show();
                 }
             }
             
@@ -462,35 +460,30 @@ background-color: #FFFFFF ;
         
         
         
-        function convert_hour(d){
-            var h = addZero(d.getUTCHours());
-            var m = addZero(d.getUTCMinutes());
-            var s = addZero(d.getUTCSeconds());
-            if (h >= 12) {
-                if ( h != 12) {
-                    h = h - 12;    
-                }
+        // function convert_hour(d){
+        //     var h = addZero(d.getUTCHours());
+        //     var m = addZero(d.getUTCMinutes());
+        //     var s = addZero(d.getUTCSeconds());
+        //     if (h >= 12) {
+        //         if ( h != 12) {
+        //             h = h - 12;    
+        //         }
                 
-                i = "PM"
-            } else {
-                i = "AM"
-            }
-            return h+":"+m+" "+i;
-        }
+        //         i = "PM"
+        //     } else {
+        //         i = "AM"
+        //     }
+        //     return h+":"+m+" "+i;
+        // }
         
         
         
-        function addZero(i) {
-            if (i < 10) {
-                i = "0" + i;
-            }
-            return i;
-        }
-        
-
-
-        
-        
+        // function addZero(i) {
+        //     if (i < 10) {
+        //         i = "0" + i;
+        //     }
+        //     return i;
+        // }
     });
     function load_map(reg, store_details, h, w){
         this_region = {};
@@ -515,7 +508,6 @@ background-color: #FFFFFF ;
         map.setViewBox(store_details.svgmap_region);
         map.selectRegion(store_details.svgmap_region);
         drop_pin(store_details.svgmap_region, map);
-        
     }
     
     function drop_pin(id, map){
@@ -526,17 +518,15 @@ background-color: #FFFFFF ;
         var y_offset = (parseInt(height) /2);
         
         map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-                  attrs: {
-                            src:  '//codecloud.cdn.speedyrails.net/sites/570d369d6e6f643d60030000/image/png/1463000912000/pin2.png'     // image for marker
-                          }
+            attrs: {
+                src:  '//codecloud.cdn.speedyrails.net/sites/570d369d6e6f643d60030000/image/png/1463000912000/pin2.png'     // image for marker
+                }
             }
-            ])
+        ])
         map.setViewBox(id);
         map.selectRegion(id);
         $('#btnZoomIn').click();
         $('#btnZoomIn').click();
         $('#btnZoomIn').click();
     }
-    
 </script>
-
