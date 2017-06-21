@@ -72,19 +72,19 @@
                     },  
                     firefox: {  
                         text: 'Mozilla Firefox',  
-                        url: '//www.mozilla.com/firefox/'  
+                        url: 'https://www.mozilla.com/firefox/'  
                     },  
                     safari: {  
                         text: 'Safari',  
-                        url: '//www.apple.com/safari/download/'  
+                        url: 'https://www.apple.com/safari/download/'  
                     },  
                     opera: {  
                         text: 'Opera',  
-                        url: '//www.opera.com/download/'  
+                        url: 'https://www.opera.com/download/'  
                     },  
                     msie: {  
                         text: 'Internet Explorer',  
-                        url: '//www.microsoft.com/windows/Internet-explorer/'  
+                        url: 'https://www.microsoft.com/windows/Internet-explorer/'  
                     }  
                 },// Message below close window link  
                 imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
