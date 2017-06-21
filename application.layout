@@ -66,26 +66,26 @@
                         // Text below the icon  
                         text: 'Google Chrome',  
                         // URL For icon/text link  
-                        url: 'https://www.google.com/chrome/',  
+                        url: '//www.google.com/chrome/',  
                         // (Optional) Use "allow" to customized when to show this option  
                         // Example: to show chrome only for IE users  
                         // allow: { all: false, msie: true }  
                     },  
                     firefox: {  
                         text: 'Mozilla Firefox',  
-                        url: 'https://www.mozilla.com/firefox/'  
+                        url: '//www.mozilla.com/firefox/'  
                     },  
                     safari: {  
                         text: 'Safari',  
-                        url: 'https://www.apple.com/safari/download/'  
+                        url: '//www.apple.com/safari/download/'  
                     },  
                     opera: {  
                         text: 'Opera',  
-                        url: 'https://www.opera.com/download/'  
+                        url: '//www.opera.com/download/'  
                     },  
                     msie: {  
                         text: 'Internet Explorer',  
-                        url: 'https://www.microsoft.com/windows/Internet-explorer/'  
+                        url: '//www.microsoft.com/windows/Internet-explorer/'  
                     }  
                 },// Message below close window link  
                 imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
