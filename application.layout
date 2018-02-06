@@ -94,6 +94,17 @@
     </script>
     <style>
         /*custom styles*/
+        .bk_logo_svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/590/original/BK_Logo_ProudlyManagedBy_White_final-01.svg?1517934408);
+            background-size: 100px 70px;
+            background-repeat: no-repeat;
+        }
         a .directory_content:hover{
             color: #c02329 !important;
         }
@@ -198,6 +209,9 @@
                 border:15px solid #fdd2d4 !important;
                 border-top:none !important;
             }  
+              .bk_logo_svg {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -270,7 +284,9 @@
                </div>
           </div>
           <div id="social_media_wrapper"> <a href="https://www.youtube.com/channel/UCUBUaZUMdnLT1iS1yPFBIyQ" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a> </div>
-          <a href="//bentallkennedy.com/" target="_blank"><img class="property_logo" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/594aa2e66e6f644af7fc0000/image/png/undefined/bental-logo2.png"/></a>
+          <a href="//bentallkennedy.com/" target="_blank">
+              <div class="bk_logo_svg"></div>
+          </a>
      </div>
 </header>
 <div id="back-top"><img alt="BackToTop" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
