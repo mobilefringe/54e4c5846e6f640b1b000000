@@ -117,6 +117,7 @@
                     // 	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                     // }
                     val.dates = start.format("MMM D");
+                    console.log(val.dates);
                 }
                 
                 var rendered = Mustache.render(template_html,val);
