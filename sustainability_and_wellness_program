@@ -30,7 +30,7 @@
                 </script>
             </div>  
             <section class="service_teasers" style="display:none" id="no_event_container">
-                <h2>There are no promotions at this time, please check back later.</h2>
+                <h2>There are no events at this time, please check back later.</h2>
             </section>
         </div>
         <div class="right_column">
