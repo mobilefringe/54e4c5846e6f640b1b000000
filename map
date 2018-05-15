@@ -79,11 +79,11 @@
 </div>
 <div  id="main_content" style="display:none">
     <nav>
-    <ul class="breadcrumb">
-        <li><a href="/home">Home</a> </li>
-        <li><a href="/stores">Store Directory</a></li>
-        <li class="active">Centre Map</li>
-    </ul>
+        <ul class="breadcrumb">
+            <li><a href="/home">Home</a> </li>
+            <li><a href="/stores">Store Directory</a></li>
+            <li class="active">Centre Map</li>
+        </ul>
     </nav>
 <div class="page_banner">
     <h2>Centre Map</h2>
