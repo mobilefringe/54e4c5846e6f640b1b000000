@@ -8,7 +8,7 @@
             <li><a href="/contact_us">Contact Us</a> </li>
             <li class="active">About Us</li>
         </ul>
-        </nav>
+    </nav>
     <div class="page_banner">
         About Us
     </div>
