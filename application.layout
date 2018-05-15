@@ -152,6 +152,7 @@
             font-size:22px !important;
             margin-top:0 !important;
             line-height:20px !important;
+            text-transform: uppsercase;
         }
         .site_description{
             font-size:15px !important;
