@@ -239,7 +239,6 @@
         .btn-danger {
             color: #ffffff;
             background-color: #c9312c;
-            border-color: #d43f3a;
         }
         @media (max-width: 767px) {
             .main_window{
