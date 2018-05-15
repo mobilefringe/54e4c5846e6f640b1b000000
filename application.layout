@@ -160,6 +160,9 @@
             margin-bottom:0 !important;
             text-transform: none;
         }
+        .flex-control-nav {
+            background: #fff;
+        }
         /*social media box color*/
         #social_media_wrapper{
             background:#c02329
