@@ -111,8 +111,7 @@
         }
         /*hyperlinks*/
         a{
-            color: #eb9396;
-            /*#c02329;*/
+            color: #c02329;
             text-decoration:inherit;
         }
         /*hyperlink hover color*/
