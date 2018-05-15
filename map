@@ -84,7 +84,7 @@
     <li class="active">Centre Map</li>
 </ul>
 <div class="page_banner">
-    Centre Map
+    <h2>Centre Map</h2>
 </div>
 <div style="overflow:hidden;height:400px;margin:5px">
     <label style="display: none;" for="storelist_container">Select a Store</label>
