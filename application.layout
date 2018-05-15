@@ -272,7 +272,7 @@
                             </ul> 
                          </li>
                           <li><a href="/find_us">Find Us</a></li>
-                         <li id="contact_link" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">contact us <span class="caret"></span></a>
+                         <li id="contact_link" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Contact us <span class="caret"></span></a>
                              <ul class="dropdown-menu">
                                 <li><a href="/contact_us">Contact Us</a></li>
                                
