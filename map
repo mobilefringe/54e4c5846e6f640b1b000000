@@ -212,6 +212,7 @@
                                 didPanZoom = false;
                                       
                             });
+                            }
                         }
                     });
                     s.append(f.select("svg"));
