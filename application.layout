@@ -90,7 +90,7 @@
                 imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
             });      
         });
-        setEndPoint('//twinpine.mallmaverick.com/api/v4/twinpine/all.json');
+        setEndPoint('//thevillageatvaughanmills.mallmaverick.com/api/v4/villageatvaughanmills/all.json');
     </script>
     <style>
         /*custom styles*/
