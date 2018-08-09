@@ -104,53 +104,46 @@
                 </script>
             </div>
             <div id="mm_page_content" class="directory_content"></div>
-            
         </div>
     </div>
 </div>
 <script>
-        function randomgen() {
-            var rannumber='';
+    function randomgen() {
+        var rannumber='';
         for(ranNum=1; ranNum<=6; ranNum++){
           rannumber+=Math.floor(Math.random()*10).toString();
         }
         $('#verifyNum').html(rannumber);
         $('#verifyNumHidden').val(rannumber);
-      }
-      randomgen();
+    }
+    
+    randomgen();
       
-        
-        $('#contact_form').submit(function(e) {
-
+    $('#contact_form').submit(function(e) {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-                values = [];
-                values = JSON.stringify($('#contact_form').serializeArray());
-                e.preventDefault();
-                $.ajax({
-                    url : "/api/v1/contact_us",
-                    type: "POST",
-                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
-                    form_data:values},
-                    success: function(data, textStatus, jqXHR)
-                    {
-                        $('#send_contact_success').fadeIn();
-                        $('#contact_form').find("input[type=text], textarea").val("");
-                    },
-                    error: function (jqXHR, textStatus, errorThrown)
-                    {
-                        $('#send_contact_error').fadeIn();
-                    }
-                });
-
-            
+            values = [];
+            values = JSON.stringify($('#contact_form').serializeArray());
+            e.preventDefault();
+            $.ajax({
+                url : "/api/v1/contact_us",
+                type: "POST",
+                data : {authenticity_token: '<%=form_authenticity_token%>' ,
+                form_data:values},
+                success: function(data, textStatus, jqXHR) {
+                    $('#send_contact_success').fadeIn();
+                    $('#contact_form').find("input[type=text], textarea").val("");
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $('#send_contact_error').fadeIn();
+                }
+            });
+        } else {
+            alert("Please Enter Correct Verification Number");
+            randomgen();
+            e.preventDefault();
         }
-        else
-        {
-          alert("Please Enter Correct Verification Number");
-          randomgen();
-          e.preventDefault();
-        }
-      });
+    });
+    
     $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
@@ -160,9 +153,8 @@
             var pages_json = prefix+"/pages/villageatvaughanmills-contact-us.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_title').html(data.title);
-                // $('#mm_title_phone').html(data.title);
-                // $('#mm_title_location').html(data.title);
                 $('#mm_page_content').html(data.body);
+                $('#mm_page_content_mobile').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     console.log("Sorry. We cant find the page " + pages_json);
