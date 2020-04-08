@@ -13,7 +13,7 @@
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="" src="//kodekloud.s3.amazonaws.com/sites/54e4c5846e6f640b1b000000/0c6440cf3178978c6ae2b530b853f567/Find-Us_edited.jpg"/>
+            <img class="inside_banner_image" alt="" src=""/>
             <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
             <div class="mobile_cat_list" style="display:none">
                 <p class="right_column_header">categories</p>
@@ -29,7 +29,6 @@
                         <a href="/stores/{{slug}}"><p class="directory_content directory_name_col">{{name}}</p></a>{{#phone}}<a href="tel:{{phone}}"><p class="directory_content directory_phone_col">{{phone}}</p></a>{{/phone}}
                     </script>
                 </div>
-                
             </div>
             <div class="directory_div" id="store_category_list_container">
                 <script id="category_store_list_template" type="x-tmpl-mustache/text">
@@ -56,8 +55,6 @@
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                 </script>
             </div>
-            
-            
         </div>
     </div>
 </div>
